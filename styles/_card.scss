@@ -1,0 +1,73 @@
+.card {
+    max-width: 500px;
+    margin: 1rem;
+    @include flex(column, center);
+    gap: 1rem;
+    .card-header {
+        width: 100%;
+        @include flex(row, space-between);
+        background-color: $colorSoftred;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        h3 {
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: $colorCream;
+        }
+        p {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $colorVerypaleorange;
+        }
+    }
+    .card-main {
+        background-color: $colorVerypaleorange;
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        @media (min-width: 42em) {
+            padding: 1rem 1.5rem;
+        }
+        .body {
+            @include flex(column, center);
+            align-items: flex-start;
+            gap: 0.5rem;
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+        .footer {
+            @include flex(row, space-between);
+            align-items: flex-end;
+            padding: 1rem 0;
+            border-top: 1px solid $colorCream;
+            width: 95%;
+            margin: auto;
+            .total-month {
+                p {
+                    font-size: 0.8rem;
+                    color: $colorMediumbrown;
+                    margin-bottom: 0.3rem;
+                }
+                h1 {
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                }
+            }
+            .percentage-last-month {
+                h3 {
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    text-align: end;
+                    margin-bottom: 0.3rem;
+                }
+                p {
+                    font-size: 0.8rem;
+                    color: $colorMediumbrown;
+                }
+            }
+        }
+    }
+}

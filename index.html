@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+
+<body>
+    <main>
+        <section class="card">
+            <section class="card-header">
+                <div class="info-header">
+                    <h3>My balance</h3>
+                    <p>$921.48</p>
+                </div>
+                <div class="img-header">
+                    <img src="images/logo.svg" alt="logo" />
+                </div>
+            </section>
+            <section class="card-main">
+                <div class="body">
+                    <h1>Spending - Last 7 days</h1>
+                    <div class="bar-chart" id="bar-chart">
+                        <template id="template">
+                            <div class="chart-day">
+                                <div class="amount-day hidden"></div>
+                                <div class="bar-day"></div>
+                                <p class="day"></p>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="total-month">
+                        <p>Total this month</p>
+                        <h1>$478.33</h1>
+                    </div>
+                    <div class="percentage-last-month">
+                        <h3>+2.4%</h3>
+                        <p>from last month</p>
+                    </div>
+            </section>
+        </section>
+    </main>
+    <!-- <div class="attribution">
+       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/vikrantmalla">Vikrant Malla</a>.
+    </div> -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

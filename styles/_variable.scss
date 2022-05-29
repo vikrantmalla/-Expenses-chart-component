@@ -1,0 +1,23 @@
+/*Color */
+
+
+/*Primary Color */
+
+$colorSoftred: hsl(10, 79%, 65%);
+$colorCyan: hsl(186, 34%, 60%);
+
+/*Neutral Color */
+
+$colorDarkbrown: hsl(25, 47%, 15%);
+$colorMediumbrown: hsl(28, 10%, 53%);
+$colorCream: hsl(27, 66%, 92%);
+$colorVerypaleorange: hsl(33, 100%, 98%);
+
+/*mixin */
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}

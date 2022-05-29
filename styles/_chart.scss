@@ -1,0 +1,46 @@
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    .chart-day {
+        @include flex(column, center);
+        cursor: pointer;
+        margin-right: 0.5rem;
+        margin-top: 3rem;
+        position: relative;
+        .amount-day {
+            font-size: 0.7rem;
+            background-color: $colorDarkbrown;
+            padding: 0.4rem;
+            border-radius: 0.3rem;
+            color: #fff;
+            display: none;
+            position: absolute;
+            top: -2rem;
+        }
+        .bar-day {
+            width: 35px;
+            border-radius: 0.2rem;
+            background-color: $colorSoftred;
+            &:hover {
+                background-color: hsl(10, 69%, 75%);
+            }
+        }
+        .day {
+            color: $colorMediumbrown;
+            font-size: 0.7rem;
+            margin: 0.5rem 0 1rem;
+        }
+        .isMaxAmount {
+            background-color: $colorCyan;
+            &:hover {
+                background-color: hsl(186, 21%, 72%);
+            }
+        }
+        &:hover {
+            .amount-day {
+                display: block;
+            }
+        }
+    }
+}
